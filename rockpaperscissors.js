@@ -18,7 +18,7 @@ function randomPlay() {
     }
 }
 ////////////////////////////////////////////////
-/*           Write Your Code Below            */
+/*           YaoWen Your Code Below            */
 ////////////////////////////////////////////////
 
 function getPlayerMove(move) {
@@ -42,24 +42,18 @@ function getWinner(playerMove,computerMove) {
     // The rules of the game are that 'rock' beats 'scissors', 'scissors' beats 'paper', and 'paper' beats 'rock'.
     /* YOUR CODE HERE */
     if (playerMove === 'rock' && computerMove === 'scissors')
-    {
-       return 'Player' + ' ' + 'Wins';
-    }  else if (playerMove === 'rock' && computerMove === 'paper') {
-       return 'Computer' + ' ' + 'Wins';
-    }  else if (playerMove === 'rock' && computerMove === 'rock') {
-       return 'Tie';
-    }  else if (playerMove === 'scissors' && computerMove === 'rock') {
-       return 'Computer' + ' ' + 'Wins';
+    {  winner='Player';
     }  else if (playerMove === 'scissors' && computerMove === 'paper') {
-       return 'Player' + ' ' + 'Wins';
-    }  else if (playerMove === 'scissors' && computerMove === 'scissors') {
-       return 'Tie';
+       winner='Player';
     }  else if (playerMove === 'paper' && computerMove === 'rock') {
-       return 'Player' + ' ' + 'Wins';
-    }  else if (playerMove === 'paper' && computerMove === 'paper') {
-       return 'Tie';
+       winner='Player';
     }  else if (playerMove === 'paper' && computerMove === 'scissors') {
-       return 'Computer' + ' ' + 'Wins';
+       winner='Computer';
+    }  else if (playerMove === 'rock' && computerMove === 'paper') {
+       winner='Computer';
+    }  else if (playerMove === 'scissors' && computerMove === 'rock') {
+       winner='Computer';
+    }  else if (playerMove===computerMove){winner="tie";
     }
 }
 
@@ -68,7 +62,17 @@ function playToFive() {
     var playerWins = 0;
     var computerWins = 0;
     // Write code that plays 'Rock, Paper, Scissors' until either the player or the computer has won five times.
-    /* YOUR CODE HERE */
+    /* YaoWen CODE HERE */
+
+
+
+
+
+
+
+
+
+
     return [playerWins, computerWins];
 }
 
